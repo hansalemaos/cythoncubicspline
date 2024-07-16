@@ -400,14 +400,13 @@ def calculate_missing_coords_and_fill_all_holes(
             check_maxvalue_y=check_maxvalue_y,)
     for v in calca.values():
         allco.append(v["interp_coords"])
-    print(allco)
     for i in range(len(allco) - 1):
-        if not allco[i]:
-            continue
-        if len(allco[i][len(allco[i]) - 1]) <2:
-            continue
-        if len(allco[i + 1]) <2:
-            continue
+        #if not allco[i]:
+            #continue
+        #if len(allco[i][len(allco[i]) - 1]) <2:
+            #continue
+        #if len(allco[i + 1]) <2:
+            #continue
         coli = get_coords_of_line(
             allco[i][len(allco[i]) - 1][0],
             allco[i][len(allco[i]) - 1][1],
